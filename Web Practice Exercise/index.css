@@ -1,0 +1,380 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+
+}
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    background-color: #f6f6f6;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.iconContainer {
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    font-size: larger;
+    margin-bottom: 1.5rem;
+
+    .icon {
+        background-color: #408377;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}
+
+
+.imgContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        z-index: -1;
+        -webkit-transform: scaleX(-1);
+        transform: scaleY(-1);
+    }
+}
+
+.title {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-left: 400px;
+
+    h1 {
+        font-weight: 550;
+        width: 660px;
+        font-size: 80px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    h2,
+    h4 {
+        font-weight: 500;
+        width: 660px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 26px;
+    }
+}
+
+.navBar {
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+    z-index: 1;
+    display: flex;
+    height: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 4rem;
+
+
+    .dropdown {
+        width: fit-content;
+        margin-left: 6rem;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 8px;
+
+        i {
+            font-size: 12px;
+        }
+
+
+        span {
+            position: relative;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content p {
+        width: 100%;
+        height: 2rem;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        padding-top: 0.8rem;
+        border-radius: 5px;
+    }
+
+    .dropdown-content p:hover {
+        background-color: #2e5f56;
+        color: white;
+    }
+
+    .navBtn {
+        background-color: transparent;
+        border: none;
+        color: white;
+        height: 100%;
+        font-size: medium;
+        height: 100%;
+        padding: 0 10px;
+
+        &:hover {
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            color: #2e5f56;
+        }
+    }
+
+    .loginBtn {
+        font-weight: bold;
+    }
+
+    .navBtnSpecial {
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        color: #2e5f56;
+        height: 100%;
+        padding: 0 10px;
+        font-size: medium;
+    }
+
+}
+
+.info-card {
+    position: absolute;
+    z-index: 2;
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -7px -5px 14px 0px rgba(0, 0, 0, 0.091);
+    top: 10rem;
+    left: 100px;
+}
+
+.booking-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    padding-top: 5px;
+
+    .item {
+        width: 100%;
+        border-bottom: solid 1px #dddddd;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+        gap: 5px;
+        color: #a7a7a7;
+        font-size: 14px;
+    }
+
+    i {
+        font-size: smaller;
+    }
+}
+
+.selected {
+    color: #408377;
+    border-bottom: solid 2px #40837776;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    gap: 5px;
+    font-size: 14px;
+}
+
+
+.select-item1 {
+    grid-area: header;
+    margin-top: 20px;
+}
+
+.select-item2 {
+    grid-area: main;
+}
+
+.select-item3 {
+    grid-area: main1;
+}
+
+.select-item4 {
+    grid-area: main2;
+}
+
+.select-item5 {
+    grid-area: main3;
+}
+
+.select-item6 {
+    grid-area: bottom;
+}
+
+.select-item7 {
+    grid-area: footer;
+    margin-top: 60px;
+}
+
+
+.select-area {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'main main1'
+        'main2 main3'
+        'bottom .'
+        'footer footer';
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 20px;
+
+    .item input {
+        width: 100%;
+    }
+}
+
+.select-item {
+    height: fit-content;
+}
+
+
+.find {
+    height: 40px;
+    width: 100%;
+    background-color: #408377;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.dest-item input {
+    width: 100%;
+}
+
+
+.select-area input {
+    border: none;
+    height: 30px;
+}
+
+::placeholder {
+    color: black;
+    font-size: 14px;
+}
+
+.dest-input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    border-bottom: solid 1px #dddddda8;
+}
+
+.item label, .dest-item label{
+    color: #a7a7a7;
+    font-size: 14px;
+}
+
+.help {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    .help-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #dddddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #256c5f;
+        font-size: larger;
+        
+    }
+}
