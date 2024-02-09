@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    pointer-events: all;
 }
 
 .logoContainer {
@@ -124,7 +125,7 @@ body {
 
     .dropdown {
         width: fit-content;
-        margin-left: 6rem;
+        margin-left: 4.5rem;
     }
 
     .menu {
@@ -142,7 +143,7 @@ body {
         span {
             position: relative;
             display: inline-block;
-            width: 25px;
+            width: 35px;
             height: 25px; 
             overflow: hidden;
             display: flex;
@@ -167,6 +168,8 @@ body {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         padding: 12px 16px;
         z-index: 1;
+        border-radius: 5px;
+        margin-top: 3px;
     }
 
     .dropdown:hover .dropdown-content {
@@ -218,6 +221,11 @@ body {
         height: 100%;
         padding: 0 10px;
         font-size: medium;
+
+        &:hover {
+            background-color: #408377;
+            color: white;
+        }
     }
 
 }
@@ -238,6 +246,7 @@ body {
     '. . . .';
     grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 0.25fr auto 2.25fr 0.5fr;
+    pointer-events: none;
 
     
     .info-card {
@@ -246,6 +255,7 @@ body {
         background-color: white;
         border-radius: 20px;
         box-shadow: -7px -5px 14px 0px rgba(0, 0, 0, 0.091);
+        pointer-events: visible;
     }
 }
 
@@ -366,6 +376,7 @@ body {
     color: white;
     border: none;
     border-radius: 8px;
+    pointer-events: visible;
 
     &:hover {
         background-color: #23b197;
@@ -411,6 +422,11 @@ body {
         align-items: center;
         color: #256c5f;
         font-size: larger;
+
+        &:hover {
+            background-color: #408377;
+            color: white;
+        }
         
     }
 }
