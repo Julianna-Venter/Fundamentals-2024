@@ -67,18 +67,20 @@ body {
         z-index: -1;
         -webkit-transform: scaleX(-1);
         transform: scaleY(-1);
+        margin-bottom: 130px;
     }
 }
 
 .title {
+    grid-area: title;
     position: absolute;
     z-index: 1;
     color: white;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 105%;
     align-items: center;
-    padding-left: 400px;
+    align-self: center;
 
     h1 {
         font-weight: 550;
@@ -228,10 +230,10 @@ body {
     display: grid;
     grid-template-areas: 
     '. . . .'
-    '. card . .'
+    '. card title .'
     '. . . .';
     grid-template-rows: 1fr auto 1fr;
-    grid-template-columns: 0.5fr 1.167fr 1.167fr 1.167fr;
+    grid-template-columns: 0.25fr auto 2.25fr 0.5fr;
 
     
     .info-card {
