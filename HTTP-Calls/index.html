@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello F1</h1>
+
+    <script>
+        fetch('http://ergast.com/api/f1/2023/1/results.json') //fetch it from the url
+	.then(response => response.json()) //pass as json
+	.then(jsonresponse => console.log(jsonresponse)) //console log the response, this is what is displayed in the console and can be manipulated into DOM elelemnts
+	.catch((error) => console.error(error)) //handle errors if so happens
+	.finally(() => console.log('The network call has been finalised'));
+    </script>
+</body>
+</html>
