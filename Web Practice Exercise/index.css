@@ -8,6 +8,10 @@ body {
 
 }
 
+button {
+    cursor: pointer;
+}
+
 .sidebar {
     height: 100%;
     width: 300px;
@@ -19,6 +23,10 @@ body {
     justify-content: space-between;
     align-items: center;
     pointer-events: all;
+
+    .icon {
+        cursor: pointer;
+    }
 }
 
 .logoContainer {
@@ -126,6 +134,7 @@ body {
     .dropdown {
         width: fit-content;
         margin-left: 4.5rem;
+        cursor: pointer;
     }
 
     .menu {
@@ -279,6 +288,7 @@ body {
         font-weight: bold;
         gap: 5px;
         font-size: 14px;
+        cursor: pointer;
 
         &:hover {
             color: #23b197;
@@ -298,6 +308,7 @@ body {
         gap: 5px;
         color: #a7a7a7;
         font-size: 14px;
+        cursor: pointer;
 
         &:hover {
             color: #23b197;
@@ -422,6 +433,7 @@ body {
         align-items: center;
         color: #256c5f;
         font-size: larger;
+        cursor: pointer;
 
         &:hover {
             background-color: #408377;
