@@ -1,0 +1,5 @@
+<div *ngIf="count < 50; else elseBlock">Genre {{ idNumber }} : {{ count }}</div>
+
+<ng-template #elseBlock>
+  <div>Else</div>
+</ng-template>

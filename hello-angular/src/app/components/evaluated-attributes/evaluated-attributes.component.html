@@ -1,0 +1,29 @@
+<h1>
+  Your clothes are <span [style.color]="color">{{ color }}</span>
+</h1>
+
+<button (click)="changeColor()">
+  Your clothes are {{ color === "black" ? "black" : "red" }}
+</button>
+
+<img [src]="'../../../assets/images/' + color + '.jpeg'" alt="Angular logo" />
+<h2>Which is selected</h2>
+
+<div class="flex">
+  <div class="btn" [class.selected]="selected === 0" (click)="selected = 0">
+    Click Me
+  </div>
+  <div class="btn" [class.selected]="selected === 1" (click)="selected = 1">
+    Click Me
+  </div>
+  <div class="btn" [class.selected]="selected === 2" (click)="selected = 2">
+    Click Me
+  </div>
+  <div
+    class="btn"
+    [class]="selected === 3 ? 'btn selected' : 'btn unselected'"
+    (click)="selected = 3"
+  >
+    Click Me
+  </div>
+</div>

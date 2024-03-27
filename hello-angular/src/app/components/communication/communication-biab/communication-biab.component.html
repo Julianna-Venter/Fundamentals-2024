@@ -1,0 +1,5 @@
+<div>
+  <button type="button" (click)="decreaseSize()" title="smaller">-</button>
+  <button type="button" (click)="increaseSize()" title="bigger">+</button>
+  <span [style.font-size.px]="size">FontSize: {{ size }}px</span>
+</div>
