@@ -1,5 +1,11 @@
 <h1>Hello world</h1>
-<app-communication />
+<button (click)="isSeasonlistVisible = !isSeasonlistVisible">
+  {{ isSeasonlistVisible ? "Hide" : "Show" }}
+</button>
+@if (isSeasonlistVisible) {
+<app-seasons-list />
+}
+<!-- <app-communication /> -->
 <!-- <app-evaluated-attributes /> -->
 <!--<app-genre *ngFor="let i of [].constructor(totalGenres)" />
 

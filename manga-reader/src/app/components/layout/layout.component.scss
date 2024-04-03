@@ -1,0 +1,16 @@
+nz-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: whitesmoke;
+  font-size: 2rem;
+  span {
+    color: orangered;
+  }
+}
+
+[nz-menu] {
+  line-height: 64px;
+}
